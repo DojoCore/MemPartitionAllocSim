@@ -1,0 +1,22 @@
+﻿<Window x:Class="MemoryAlloc.Sequence"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MemoryAlloc"
+        mc:Ignorable="d"
+        Title="编辑指令序列" Height="400" Width="400" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Margin="7,5">指令序列：</TextBlock>
+        <TextBox AcceptsReturn="True" FontFamily="Courier New"
+                 Grid.Row="1" Margin="5" Name="txtSequence"
+                 FontSize="14" TextChanged="txtSequence_TextChanged">
+        </TextBox>
+
+    </Grid>
+</Window>
